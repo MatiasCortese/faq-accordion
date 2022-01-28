@@ -1,6 +1,7 @@
 
 // Save questions
 const questions = document.getElementsByClassName("question")
+const arrow = document.getElementById('arrow')
 
 // We loop through the array of questions so we can add an event listener on each question and set a function as response to the event
 Array.from(questions).forEach(question => {
@@ -16,17 +17,18 @@ function open(event) {
             if (!question.classList.contains('active'))
             {
                 // Add active state to the question
-                question.classList.add("active")
+                question.classList.toggle("active")
+                // 
                 // Add shown state to the answer
-                question.nextElementSibling.classList.add('shown')
+                question.nextElementSibling.classList.toggle('shown')
                 // Turn arrow looking up
             } 
             // If the question clicked already has active class
             else {
                 // Remove question active state
-                question.classList.remove('active')
+                question.classList.toggle('active')
                 // Remove answer shown state
-                question.nextElementSibling.classList.remove('shown') 
+                question.nextElementSibling.classList.toggle('shown') 
                 // Turn arrow looking down again
             }
         }

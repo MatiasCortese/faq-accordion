@@ -115,9 +115,6 @@ body {
 }
 
 .question {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 0.7rem 0 0.7rem 0;
     background-image: url(images/icon-arrow-down.svg);
     background-position: right center;
@@ -128,13 +125,16 @@ body {
     overflow: hidden;
 }
 
-
 .question:hover {
     color: var(--Soft-red);
 }
 
 .active {
     font-weight: 700;
+}
+
+.up {
+    transform: translateX(180deg);
 }
 
 .answer {
@@ -198,6 +198,8 @@ body {
         width: 58%;
         height: auto;
         max-width: 17.5rem;
+        position: relative;
+        left: -5rem
     }
 
     .right-box {
