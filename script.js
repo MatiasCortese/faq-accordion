@@ -17,19 +17,21 @@ function open(event) {
             if (!question.classList.contains('active'))
             {
                 // Add active state to the question
-                question.classList.toggle("active")
-                // 
-                // Add shown state to the answer
-                question.nextElementSibling.classList.toggle('shown')
+                question.classList.toggle("active")     
                 // Turn arrow looking up
+                question.nextElementSibling.classList.toggle('up')
+                // Add shown state to the answer
+                question.parentElement.nextElementSibling.children[0].classList.toggle('shown')
+                
             } 
             // If the question clicked already has active class
             else {
                 // Remove question active state
                 question.classList.toggle('active')
-                // Remove answer shown state
-                question.nextElementSibling.classList.toggle('shown') 
                 // Turn arrow looking down again
+                question.nextElementSibling.classList.toggle('up')
+                // Remove answer shown state
+                question.parentElement.nextElementSibling.children[0].classList.toggle('shown') 
             }
         }
     })
