@@ -1,10 +1,11 @@
 Pendings:
 
-[ ] - Arrow turns up when active state is set to the 
+[ X ] - Arrow turns up when active state is set to the 
 question and turned down when question is not active
-
+[ X ] - Show and hide answer
+[ ] - arrow animation
 [ ] - answer shown animation
-[ ] - Check responsive
+[ ] - Check design
 
 
 
