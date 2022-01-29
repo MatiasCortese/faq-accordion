@@ -1,7 +1,6 @@
 
 // Save questions
 const questions = document.getElementsByClassName("question")
-const arrow = document.getElementById('arrow')
 
 // We loop through the array of questions so we can add an event listener on each question and set a function as response to the event
 Array.from(questions).forEach(question => {

@@ -140,11 +140,14 @@ body {
 
 .arrow-img {
     width: 0.8rem;
-    height: 0.5rem;  
+    height: 0.5rem;
+    transform: rotate(0deg);
+    transition: transform 300ms ease-in-out;
 }
 
 .up {
     transform: rotate(180deg);
+    transition: transform 300ms ease-in-out;
 }
 
 .answer {
